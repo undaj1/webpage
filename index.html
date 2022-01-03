@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Homework.css">
+        <title>Fizzbuzz generator</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Homework.js" defer></script>
+        <style>
+body {
+  font-family: Verdana, sans-serif;
+}
+</style>
+    </head>
+    <body>
+        <main>
+            <h1>Fizzbuzz generator</h1>
+            <div class="nawBox" >
+                <label>min</label>
+                <input id="rangeInput"  type="range" value="0" min="1" max="100" oninput="mins.value=rangeInput.value" onpaste="return false" />
+                <input type="number" name="field" id="mins"  min="1" max="100" oninput="rangeInput.value=mins.value" onpaste="return false" >
+                
+                <label>max</label> 
+                <input id="rangeInput1" type="range" value="100" min="2" max="100" oninput="maxs.value=rangeInput1.value" />
+                <input type="number" name="field" id="maxs" min="2" max="100" oninput="rangeInput1.value=maxs.value" onpaste="return false">
+
+                <button id="1" class="btn" >reset</button>
+                <button id="2" class="btn">default</button>
+                <button id="3" class="btn">Fizz</button>
+                <button id="4" class="btn">Buzz</button>
+                <button id="5" class="btn">FizzBuzz</button>
+                <button id="6" onclick='create()' class="btn">generate</button>
+            </div>
+            <div id="box" class="flex-container">
+            </div>
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,151 @@
+
+
+.flex-container {
+    margin-top: 5%;
+    height:auto;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-between;
+    align-content: space-around;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-rows: repeat(auto-fill);
+    grid-gap:7.5px;
+    
+    border-radius:6px;
+
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    
+    height: 36px;
+    width: 16px;
+    border-radius: 7px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: 0; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+  }
+
+ 
+body {
+    background: linear-gradient(to right, white, rgba(54, 54, 54, 0.144) , white )
+    
+}
+
+.navBox {
+    height:auto;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-between;
+    align-content: space-around;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-rows: repeat(auto-fill);
+    grid-gap:7.5px; 
+
+}
+
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    border-radius:6px;
+    min-height:30px;
+    width: 60;
+    border:none;
+    color:rgb(75, 74, 74);
+    box-shadow: 0px 8px 15px rgba(11, 5, 100, 0.171);
+    
+    
+  
+}
+
+
+.btn:hover {
+    
+    background-image: linear-gradient(rgba(255, 255, 255, 0.808) , rgb(218, 218, 218));
+
+}
+
+.btn:active {
+    
+    background-image: linear-gradient(rgb(218, 218, 218) ,rgb(255, 255, 255));
+
+}
+
+
+.fiz {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 1em;
+    width: 100%;
+    min-height:75px;
+    border-radius:9px;
+    border: 1px solid #bbb;
+    transition: all 0.3 linear;
+    background-image: linear-gradient(rgb(203, 247, 186) , rgb(255, 255, 255));
+
+}
+
+.buz {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 1em;
+    width: 100%;
+    min-height:75px;
+    border-radius:9px;
+    border: 1px solid #bbb;
+    transition: all 0.3 linear;
+    background-image: linear-gradient(rgb(247, 241, 186) , rgb(255, 255, 255));    
+}
+
+.fizbuz {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 1em;
+    width: 100%;
+    min-height:75px;
+    border-radius:9px;
+    border: 1px solid #bbb;
+    transition: all 0.3 linear;
+    background-image: linear-gradient(rgb(186, 243, 247) , rgb(255, 255, 255));
+    
+}
+
+.num {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 1em;
+    width: 100%;
+    min-height:75px;
+    border-radius:9px;
+    border: 1px solid #bbb;
+    transition: all 0.3 linear;
+    background-image: linear-gradient(rgb(219, 219, 219) , rgb(255, 255, 255));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:570px) {
+    .flex-container{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+}
